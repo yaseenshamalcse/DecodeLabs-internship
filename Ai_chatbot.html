@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZARA — Rule-Based AI Chatbot</title>
+
+  <!-- Tabler Icons (for send button icon) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css"
+  />
+
+  <!-- ✅ External CSS file -->
+  <link rel="stylesheet" href="Ai_cahtbot.css" />
+</head>
+
+<body>
+
+  <!-- Page Heading -->
+  <div class="page-title">
+    <h1>ZARA — Rule-Based AI Chatbot</h1>
+    <p>DecodeLabs AI Internship 2026</p>
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-wrap">
+
+    <!-- Header -->
+    <div id="chat-header">
+      <div id="avatar">ZA</div>
+      <div id="header-info">
+        <h3>ZARA — Rule-Based AI Chatbot</h3>
+        <p><span class="online-dot"></span>i am Ready</p>
+      </div>
+      <div id="msg-counter">0 messages</div>
+    </div>
+
+    <!-- Messages area -->
+    <div id="messages"></div>
+
+    <!-- Quick reply chips -->
+    <div id="suggestions">
+      <button class="chip" onclick="sendChip(this)">hello</button>
+      <button class="chip" onclick="sendChip(this)">tell me a joke</button>
+      <button class="chip" onclick="sendChip(this)">fun fact</button>
+      <button class="chip" onclick="sendChip(this)">motivate me</button>
+      <button class="chip" onclick="sendChip(this)">help</button>
+    </div>
+
+    <!-- Input area -->
+    <div id="input-area">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Type a message…"
+        autocomplete="off"
+      />
+      <button id="send-btn" aria-label="Send message">
+        <i class="ti ti-send"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!--External JavaScript file -->
+  <script src="Ai_chatbot.js"></script>
+
+</body>
+
+</html>
